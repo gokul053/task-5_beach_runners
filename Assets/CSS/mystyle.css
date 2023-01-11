@@ -1,0 +1,109 @@
+body
+{
+    background-color: #f4f4f4 !important;
+}
+.form_bg 
+{
+    /* background-color: white; */
+    /* padding:20px; */
+    position: absolute;
+    margin: auto;
+    /* top: 0; */
+    right: 0;
+    /* bottom: 0; */
+    left: 0;
+    width: 500px;
+    height: fit-content;
+}
+.text1
+{
+    font-size: 35px;
+    margin-top: 60px;
+    margin-bottom: 5px;
+
+}
+.text2
+{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    opacity:80%;
+}
+.text3
+{
+    font-weight: 300;
+    font-size: 23px;
+    opacity:80%;
+}
+input.form-control 
+{
+    height: 70px !important;
+    border: 0px;
+    border-radius: 20px;
+}
+::-webkit-input-placeholder
+{
+    font-size: 20px !important;
+    opacity: 50% !important;
+}
+:-moz-placeholder
+{  
+    font-size: 20px !important;
+}
+.text4
+{
+    font-weight: 300;
+    font-size: 23px;
+    text-decoration: none;
+    color: #3793fb;
+}
+.button1
+{
+    background-color: #0188dc;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 40px;
+}
+.button1:hover
+{
+    color: whitesmoke;
+}
+.input-box
+{
+position: relative;
+width: auto;
+}
+.input-box i 
+{
+position: absolute;
+right: 25px;
+bottom: 23px !important;
+color:black;
+font-weight: 300;
+}
+.fa-eye
+{
+    font-size: 30px !important;
+    opacity: 60%;
+}
+@media (max-width:548px)
+{
+    .form_bg
+    {
+        /* background-color: white; */
+    /* padding:20px; */
+    position: absolute;
+    margin: auto;
+    /* top: 0; */
+    right: 0;
+    /* bottom: 0; */
+    left: 0;
+    width: 320px;
+    height: fit-content;
+    }
+}

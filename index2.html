@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Assets/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="/Assets/CSS/mystyle2.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet">
+    <title>Task_5</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/Assets/Images/dash-logo.png" height="90px"
+                        width="160px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link admin2" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link admin2 active bgnav" aria-current="page" href="#">Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link admin2" href="#">Transactions</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <label class="nav-link dropdown-toggle admin2" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Users
+                            </label>
+                            <ul class="dropdown-menu">
+                                <li><label class="dropdown-item" href="#">Action</label></li>
+                                <li><label class="dropdown-item" href="#">Another action</label></li>
+                                <li><label class="dropdown-item" href="#">Something else here</label></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link admin2">Activities</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <label class="nav-link dropdown-toggle admin2" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Settings
+                            </label>
+                            <ul class="dropdown-menu">
+                                <li><label class="dropdown-item" href="#">Action</label></li>
+                                <li><label class="dropdown-item" href="#">Another action</label></li>
+                                <li><label class="dropdown-item" href="#">Something else here</label></li>
+                            </ul>
+                        </li>
+                        <li class="divider">&nbsp; | &nbsp;</li>
+                        <li class="nav-item dropdown">
+                            <label class="nav-link dropdown-toggle admin" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Super A.
+                            </label>
+                            <ul class="dropdown-menu">
+                                <li><label class="dropdown-item" href="#">Action</label></li>
+                                <li><label class="dropdown-item" href="#">Another action</label></li>
+                                <li><label class="dropdown-item" href="#">Something else here</label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- <img class="adminico" src="/Assets/Images/user.png" height="40px" width="40px"> -->
+                            <label class="adminico">S A</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container boredape">
+        <ul class="nav nav-tabs ">
+            <li class="nav-item">
+                <a class="nav-link active bgnav1 font1" data-bs-toggle="tab" href="#home">Jobs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font1" data-bs-toggle="tab" href="#menu1">Dropped Jobs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font1" data-bs-toggle="tab" href="#menu2">Rescheduled Jobs</a>
+            </li>
+            <form class="d-flex ms-auto mb-1 input-box" role="search">
+                <input class="form-control me-2  form-bg" type="search" placeholder="Search..." aria-label="Search"><i class="fa fa-search"></i>
+                <button class="btn btn-outline-primary searchbutton text-nowrap" type="submit">Export List</button>
+            </form>
+        </ul>
+        <div class="tab-content boredape1">
+            <div class="tab-pane container active" id="home">
+                    <div class="table-responsive-sm">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th class="text-nowrap ">Job # &nbsp;<i class='fa fa-sort'></i></th>
+                                    <th class="text-nowrap ">Job Type &nbsp;<i class='fa fa-sort'></i> <i class="fa fa-filter"></i></th>
+                                    <th class="text-nowrap ">Beach Goer &nbsp;<i class='fa fa-sort'></i></th>
+                                    <th class="text-nowrap ">Beach Runner &nbsp;<i class='fa fa-sort'></i></th>
+                                    <th class="text-nowrap ">Date &nbsp;<i class='fa fa-sort'></i> <i class="fa fa-filter"></i></th>
+                                    <th class="text-nowrap ">Status &nbsp;<i class='fa fa-sort'></i> <i class="fa fa-filter"></i></th>
+                                    <th class="text-nowrap ">Payment Status &nbsp;<i class='fa fa-sort'></i> <i class="fa fa-filter"></i></th>
+                                    <th class="text-nowrap ">Chat &nbsp;<i class='fa fa-sort'></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2442</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Robert Nills</td>
+                                    <td class="text2">Gabrial Jane</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status">Expired</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text1">View</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2441</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Ali Syed</td>
+                                    <td class="text2">-</td>
+                                    <td class="text2 text-nowrap">01/05/2023 10:30AM</td>
+                                    <td><span class="badge status">Expired</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2440</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Syed Ali</td>
+                                    <td class="text2">Syed Edwa</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status1">&emsp; &nbsp;Beach Setup Completed &emsp; &nbsp;</span></td>
+                                    <td class="text2">Paid</td>
+                                    <td class="text1">View</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2439</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Syed Ali</td>
+                                    <td class="text2">-</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status">Expired</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2438</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Brian Jake</td>
+                                    <td class="text2">Johnny Ben</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status2">Ready For Pickup</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2437</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2 text-nowrap">Aaron Hawkins</td>
+                                    <td class="text2">Johnny Ben</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status2">Ready For Pickup</span></td>
+                                    <td class="text2">Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2436</td>
+                                    <td class="text2">Return</td>
+                                    <td class="text2">Syed Ali</td>
+                                    <td class="text2">-</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status">Expired</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2435</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Robert Nills</td>
+                                    <td class="text2">Gabrial Jane</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status">Expired</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2434</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Robert Nills</td>
+                                    <td class="text2">Gabrial Jane</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status1">&emsp; &nbsp;Beach Setup Completed &emsp; &nbsp;</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text1">View</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2433</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Robert Nills</td>
+                                    <td class="text2">Gabrial Jane</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status2">Ready For Pickup</span></td>
+                                    <td class="text2">Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2432</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Syed Ali</td>
+                                    <td class="text2">-</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status">Expired</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2431</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Robert Nills</td>
+                                    <td class="text2">Gabrial Jane</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status">Expired</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2430</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2 text-nowrap">Aaron Hawkins</td>
+                                    <td class="text2">Johnny Ben</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status">Expired</span></td>
+                                    <td class="text2">Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2429</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Syed Ali</td>
+                                    <td class="text2">-</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status">Expired</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2434</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Robert Nills</td>
+                                    <td class="text2">Gabrial Jane</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status3">&emsp; &nbsp;Beach Setup in Progress &emsp; &nbsp;</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text1">View</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2430</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2 text-nowrap">Aaron Hawkins</td>
+                                    <td class="text2">Johnny Ben</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status">Expired</span></td>
+                                    <td class="text2">Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td class="text1 text-nowrap">Job #N_2429</td>
+                                    <td class="text2">Delivery</td>
+                                    <td class="text2">Syed Ali</td>
+                                    <td class="text2">-</td>
+                                    <td class="text2 text-nowrap">01/06/2023 3:30AM</td>
+                                    <td><span class="badge status">Expired</span></td>
+                                    <td class="text2">Not Paid</td>
+                                    <td class="text2 text-nowrap">Not Available</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+            <div class="tab-pane container fade" id="menu1">...</div>
+            <div class="tab-pane container fade" id="menu2">...</div>
+        </div>
+        <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item paging"><a class="page-link" href="#">3</a></li>
+              <li class="page-item paging"><a class="page-link" href="#">4</a></li>
+              <li class="page-item paging"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link dots" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              <li class="page-item"><a class="page-link" href="#">Last</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+</body>
